@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/billingWindow"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/billingLayer"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg2" >
+
+        <ImageView
+            android:id="@+id/returnButtonBilling"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btna_selector" />
+
+        <ImageView
+            android:id="@+id/refreshButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/returnButtonBilling"
+            android:scaleType="fitXY"
+            android:src="@drawable/btnb_selector" />
+
+        <ImageView
+            android:id="@+id/exitButton"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btnc_selector" />
+
+        <ImageView
+            android:id="@+id/returnMainMenu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/exitButton"
+            android:scaleType="fitXY"
+            android:src="@drawable/btnd_selector" />
+    </RelativeLayout>
+    
+    <WebView
+        android:id="@+id/billingPlayer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+		style="?android:attr/webViewStyle"
+        android:layout_below="@+id/billingLayer" />
+    
+    <RelativeLayout android:id="@+id/progressLoading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible" >
+        
+	 	<ProgressBar
+	        android:id="@+id/progress"
+	        style="?android:attr/progressBarStyleLargeInverse"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_centerHorizontal="true" />
+	
+	   <ProgressBar
+	        android:id="@+id/progress2"
+	        style="?android:attr/progressBarStyleLarge"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"        
+	        android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    
+
+    
+</RelativeLayout>

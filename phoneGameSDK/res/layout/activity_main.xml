@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <Button android:id="@+id/btn_gp" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="登入" android:onClick="login"/>
+    <Button android:id="@+id/btn_gp_reg" android:layout_width="wrap_content" android:layout_below="@id/btn_gp"
+        android:layout_height="wrap_content" android:text="登录服务器" android:onClick="loginServer"/>
+    <Button android:id="@+id/pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="pay" android:text="进入支付" android:layout_below="@id/btn_gp_reg" />
+    <Button android:id="@+id/logout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="logout" android:text="用戶退出" android:layout_below="@id/pay" />
+</RelativeLayout>

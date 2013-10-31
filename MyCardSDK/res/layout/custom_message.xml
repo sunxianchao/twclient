@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_linear_toast"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:background="@android:color/black">
+
+    <WebView android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />    
+    
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/black"
+        android:scaleType="fitXY" /> 
+    
+ 	<ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleLargeInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+ 	
+   <ProgressBar
+        android:id="@+id/progress2"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

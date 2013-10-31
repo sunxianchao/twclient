@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myGameBar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ViewFlipper android:id="@+id/flipper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <include android:id="@+id/first" 	layout="@layout/mycard_button_up_left" />
+        <include android:id="@+id/second" 	layout="@layout/mycard_menu_up" />
+        <include android:id="@+id/third" 	layout="@layout/mycard_billing_window" />
+        <include android:id="@+id/fourth"	layout="@layout/custom_message" />
+
+  	</ViewFlipper>
+
+</RelativeLayout>

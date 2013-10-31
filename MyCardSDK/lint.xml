@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="SetJavaScriptEnabled">
+        <ignore path="src/tw/com/mycard/mycardsdk/MyCardActivity.java" />
+        <ignore path="src/tw/com/mygame/mygamesdk/MyGameActivity.java" />
+    </issue>
+</lint>
